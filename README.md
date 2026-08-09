@@ -1,34 +1,227 @@
+<div align="center">
+
 AAROH
 
 Connecting Student Innovation
 
-AAROH is a student innovation ecosystem designed to bring learning, building, collaboration, mentorship, showcasing, and opportunities into one connected platform.
+A unified ecosystem where students learn, build, collaborate, showcase, and discover opportunities.
 
-Instead of keeping student ideas scattered across classrooms, hackathons, portfolios, and separate communities, AAROH aims to provide a single journey:
+<br/>
 
-Idea → Research → Team → Build → Faculty Review → Showcase → Opportunity
 
-🚀 Project Vision
 
-AAROH is being built as a unified platform where students can:
+<br/>
 
-Discover and develop ideas
+✨ Vision · 🚀 Features · 🏗️ Architecture · 🛠️ Setup · 🗺️ Roadmap
 
-Find teammates based on skills and interests
+</div>
 
-Build and manage projects
+🌟 Vision
 
-Receive faculty/mentor feedback
+AAROH is being built to solve a simple problem:
 
-Showcase their work
+Student innovation is scattered. AAROH connects the entire journey.
 
-Discover relevant opportunities
+Students often have ideas, skills, projects, hackathons, mentors, and opportunities spread across different platforms.
 
-Connect learning with real-world innovation
+AAROH brings these pieces together into one ecosystem.
 
-The long-term goal is to create an intelligent student innovation ecosystem, not just another student portal.
+             ┌──────────────┐
+             │     IDEA     │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │   RESEARCH   │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │     TEAM     │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │    BUILD     │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │    REVIEW    │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │   SHOWCASE   │
+             └──────┬───────┘
+                    ↓
+             ┌──────────────┐
+             │ OPPORTUNITY  │
+             └──────────────┘
 
-🛠️ Current Tech Stack
+🚀 Core Experience
+
+Area
+
+What AAROH enables
+
+👤 Student Identity
+
+Skills, interests, projects and achievements
+
+💡 Ideas
+
+Capture and develop innovative ideas
+
+🤝 Team Formation
+
+Find collaborators based on skills and interests
+
+🔨 Project Building
+
+Move ideas from concept to working project
+
+🧑‍🏫 Mentorship
+
+Faculty and mentor feedback
+
+🏆 Showcase
+
+Present projects and achievements
+
+🎙️ AAROH Talks
+
+Share stories, experiences and knowledge
+
+🎯 Opportunities
+
+Connect students with relevant opportunities
+
+✨ Core Experience
+
+01 — Discover
+
+Students discover ideas, people, projects, resources and opportunities relevant to their interests.
+
+02 — Build
+
+Turn an idea into a real project with teammates, mentors and structured progress.
+
+03 — Showcase
+
+Give student work a professional identity instead of letting projects disappear after a hackathon or semester.
+
+04 — Grow
+
+Connect proven skills and projects with internships, competitions, research and industry opportunities.
+
+🏗️ Technical Direction
+
+┌─────────────────────────────────────────────────────────┐
+│                       AAROH USERS                       │
+│     Students  •  Faculty  •  Institutions  •  Industry │
+└───────────────────────────┬─────────────────────────────┘
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────┐
+│                    REACT + VITE                         │
+│ Profiles • Projects • Teams • Showcase • Discovery     │
+└───────────────────────────┬─────────────────────────────┘
+                            │
+                       REST APIs
+                            │
+                            ▼
+┌─────────────────────────────────────────────────────────┐
+│                 NODE.JS + EXPRESS                       │
+│ Auth • Projects • Teams • Reviews • Opportunities      │
+└──────────────────┬──────────────────────┬───────────────┘
+                   │                      │
+                   ▼                      ▼
+          ┌────────────────┐    ┌────────────────────────┐
+          │    MONGODB     │    │      AI ENGINE         │
+          │ Users          │    │ Matching               │
+          │ Projects       │    │ Recommendations        │
+          │ Teams          │    │ Semantic Discovery     │
+          │ Opportunities  │    │ Personalized Insights  │
+          └────────────────┘    └────────────────────────┘
+
+🔑 Technical USP
+
+AI-powered Student ↔ Project ↔ Opportunity matching
+
+The long-term platform is designed to use student skills, interests, project history and goals to improve discovery and recommendations.
+
+🎨 Design System
+
+AAROH's interface follows a dark, premium, technology-focused visual language.
+
+Element
+
+Direction
+
+🎨 Background
+
+Deep navy / plum
+
+✦ Accent
+
+Pink / magenta
+
+◻️ Surface
+
+Dark glass / slate
+
+✍️ Typography
+
+Poppins + Inter
+
+🪄 Motion
+
+Framer Motion
+
+🧩 Icons
+
+Lucide React
+
+📱 Layout
+
+Responsive & component-based
+
+📂 Project Structure
+
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── common/
+│   ├── cta/
+│   ├── features/
+│   ├── footer/
+│   ├── hero/
+│   ├── howAaroh/
+│   ├── lifecycle/
+│   ├── navbar/
+│   ├── stats/
+│   └── whyAaroh/
+│
+├── context/
+├── hooks/
+├── layouts/
+│
+├── pages/
+│   ├── Admin/
+│   ├── Auth/
+│   ├── Faculty/
+│   ├── Landing/
+│   └── Student/
+│
+├── routes/
+├── services/
+├── styles/
+│   └── globals.css
+│
+├── utils/
+│
+├── App.jsx
+└── main.jsx
+
+🛠️ Tech Stack
 
 Frontend
 
@@ -38,207 +231,41 @@ Vite 8
 
 React Router
 
-Framer Motion — animations and interactions
-
-Lucide React — icons
-
 Tailwind CSS 4
 
-Inter & Poppins — typography
+Framer Motion
 
-Axios — API communication
+Lucide React
 
-Planned Backend
+Axios
+
+Inter & Poppins
+
+Planned Platform Layer
 
 Node.js
 
 Express.js
 
-REST APIs
-
-Authentication & role-based access
-
-Planned Data & Intelligence
-
 MongoDB
 
-AI/ML-powered recommendations
+REST APIs
 
-Student ↔ Project ↔ Opportunity matching
+Authentication & RBAC
 
-Semantic search and personalized discovery
+AI/ML recommendation layer
 
-📁 Project Structure
+Backend and AI components are part of the planned platform architecture and will be integrated as development progresses.
 
-aaroh_frontend/
-│
-├── public/
-│
-├── src/
-│   ├── assets/
-│   │   ├── icons/
-│   │   ├── illustrations/
-│   │   └── images/
-│   │
-│   ├── components/
-│   │   ├── common/
-│   │   ├── cta/
-│   │   ├── features/
-│   │   ├── footer/
-│   │   ├── hero/
-│   │   ├── howAaroh/
-│   │   ├── lifecycle/
-│   │   ├── navbar/
-│   │   ├── stats/
-│   │   └── whyAaroh/
-│   │
-│   ├── context/
-│   ├── hooks/
-│   ├── layouts/
-│   ├── pages/
-│   │   ├── Admin/
-│   │   ├── Auth/
-│   │   ├── Faculty/
-│   │   ├── Landing/
-│   │   └── Student/
-│   │
-│   ├── routes/
-│   ├── services/
-│   ├── styles/
-│   │   └── globals.css
-│   ├── utils/
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-
-🎨 Current Landing Page
-
-The current landing experience is structured around AAROH's core story:
-
-Hero — Introduces AAROH and its vision.
-
-Why AAROH — Explains the problem and value proposition.
-
-How AAROH — Shows how the ecosystem works.
-
-Innovation Lifecycle — Visualizes the journey from idea to opportunity.
-
-AAROH Talks — Planned/being developed as the conversation and knowledge-sharing layer.
-
-The interface follows a dark, premium visual system with:
-
-Deep navy/plum backgrounds
-
-Cream typography
-
-Pink brand accents
-
-Slate-blue secondary tones
-
-Glassmorphism surfaces
-
-Ambient gradients and glows
-
-Motion-driven interactions
-
-🧠 Core Innovation
-
-The key technical direction of AAROH is an AI-powered matching and recommendation layer.
-
-The system is intended to connect:
-
-Student Profile
-      ↓
-Skills + Interests
-      ↓
-AI Matching Engine
-      ↓
-Projects / Teams / Opportunities
-      ↓
-Collaboration & Building
-      ↓
-Showcase
-
-This allows AAROH to move beyond a static repository of student projects and become a personalized innovation ecosystem.
-
-👥 Intended Users
-
-Students
-
-Create profiles
-
-Build teams
-
-Work on projects
-
-Showcase achievements
-
-Find learning and career opportunities
-
-Faculty / Mentors
-
-Mentor students
-
-Review projects
-
-Provide feedback
-
-Identify promising innovations
-
-Institutions
-
-Track student innovation
-
-Manage programs and projects
-
-Discover campus talent
-
-Support innovation initiatives
-
-Industry / Organizations
-
-Discover student talent
-
-Find promising projects
-
-Engage with innovation
-
-Provide opportunities
-
-🔄 Innovation Lifecycle
-
-AAROH follows a structured innovation journey:
-
-IDEA
-  ↓
-RESEARCH
-  ↓
-TEAM
-  ↓
-BUILD
-  ↓
-FACULTY REVIEW
-  ↓
-SHOWCASE
-  ↓
-OPPORTUNITY
-
-The objective is to prevent good student ideas from ending at the prototype stage.
-
-💻 Getting Started
+🖥️ Getting Started
 
 Prerequisites
-
-Make sure you have:
 
 Node.js
 
 npm
+
+Git
 
 Installation
 
@@ -246,17 +273,15 @@ git clone <repository-url>
 cd aaroh_frontend
 npm install
 
-Run Development Server
+Development
 
 npm run dev
-
-Vite will start the development server and provide the local URL.
 
 Production Build
 
 npm run build
 
-Preview Production Build
+Preview
 
 npm run preview
 
@@ -264,37 +289,15 @@ Lint
 
 npm run lint
 
-🧩 Development Principles
-
-AAROH is being developed with a focus on:
-
-Component-based architecture
-
-Reusable UI components
-
-Responsive design
-
-Clean separation of concerns
-
-Scalable routing
-
-Animation without sacrificing usability
-
-Accessibility-conscious UI
-
-API-ready frontend architecture
-
-Future AI integration
-
 🗺️ Roadmap
 
-Phase 1 — Experience
+🎨 Phase 01 — Experience
 
-Brand identity
+AAROH brand identity
 
 Landing page foundation
 
-Hero section
+Hero
 
 Why AAROH
 
@@ -304,9 +307,11 @@ Innovation Lifecycle
 
 AAROH Talks
 
-Phase 2 — Platform
+⚙️ Phase 02 — Platform
 
 Authentication
+
+Student profiles
 
 Student dashboard
 
@@ -314,64 +319,95 @@ Faculty dashboard
 
 Institution dashboard
 
-Student profiles
-
 Project management
 
 Team formation
 
 Project showcase
 
-Phase 3 — Intelligence
-
-AI project recommendations
+🧠 Phase 03 — Intelligence
 
 Skill-based team matching
 
+AI project recommendations
+
 Opportunity recommendations
 
-Semantic project search
+Semantic search
 
 Personalized discovery
 
-Phase 4 — Ecosystem
+🌐 Phase 04 — Ecosystem
 
 Mentorship
 
-Hackathons and competitions
-
-Industry connections
+Hackathons & competitions
 
 Research opportunities
 
+Industry connections
+
 Institutional analytics
 
-🤝 Contribution
+👥 Ecosystem
 
-AAROH is being developed as a collaborative project.
+                    AAROH
+                      │
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+     STUDENTS      FACULTY     INSTITUTIONS
+        │             │             │
+        └─────────────┼─────────────┘
+                      ↓
+                  INDUSTRY
+                      │
+                      ↓
+               OPPORTUNITIES
 
-When contributing:
+AAROH connects the people who create, mentor, support, and discover student innovation.
 
-Create a feature branch.
+🤝 Development
 
-Keep components modular.
+AAROH is an actively evolving project.
 
-Follow the existing design system.
+Contribution principles
 
-Test the feature locally.
+Keep components modular
 
-Keep commits focused and descriptive.
+Follow the existing design system
 
-Open a pull request with a clear explanation of the change.
+Prefer reusable components
+
+Keep commits focused
+
+Test changes locally
+
+Maintain responsive behaviour
+
+Avoid unnecessary dependencies
 
 📌 Project Status
 
-Status: Active Development
+<div align="center">
 
-AAROH is currently focused on building the core product experience and frontend foundation before expanding into the complete platform architecture.
+🟣 Active Development
 
-🌱 AAROH
+The current focus is building the AAROH product experience and frontend foundation, followed by the core platform, intelligence layer, and ecosystem integrations.
+
+<br/>
+
+Learn → Build → Collaborate → Showcase → Grow
+
+<br/>
+
+AAROH
 
 Connecting Student Innovation
 
-Learn. Build. Collaborate. Showcase. Grow.
+</div>
+
+<div align="center">
+
+Built with ambition for the student innovation ecosystem.
+
+</div>
