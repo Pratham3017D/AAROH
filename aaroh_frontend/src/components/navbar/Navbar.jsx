@@ -6,6 +6,8 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container navbar-content">
+
+        {/* Logo */}
         <Link to="/" className="logo">
           <img
             src={logo}
@@ -14,25 +16,37 @@ function Navbar() {
           />
         </Link>
 
+        {/* Navigation */}
         <nav className="nav-links">
           <a href="#features">Features</a>
-          <a href="#projects">Projects</a>
+
+          {/* Projects now opens Explore Ideas */}
+          <Link to="/explore">Projects</Link>
+
           <a href="#universities">Universities</a>
+
           <a href="#about">About</a>
         </nav>
 
+        {/* Actions */}
         <div className="nav-actions">
+
           <button className="login-btn">
             Login
           </button>
 
-          <button className="primary-btn">
+          {/* Get Started → Submit Innovation */}
+          <Link to="/submit" className="primary-btn">
             Get Started
-          </button>
+          </Link>
 
-          <button className="menu-btn" aria-label="Open menu">
+          <button
+            className="menu-btn"
+            aria-label="Open menu"
+          >
             <Menu size={24} />
           </button>
+
         </div>
       </div>
     </header>
