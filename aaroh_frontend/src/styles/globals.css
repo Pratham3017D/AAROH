@@ -849,6 +849,15 @@ img {
   color: var(--cream);
 }
 
+/* ---------- Center Logo Image ---------- */
+.hero-logo-image {
+  height: 130px; /* Increased this value to make it much bigger! */
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  object-fit: contain;
+} 
+
 
 .hero-card-content p {
   margin-top: 3px;

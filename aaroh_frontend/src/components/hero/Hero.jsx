@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Users, FolderKanban } from "lucide-react";
 import { Link } from "react-router-dom";
+import aarohLogo from "../../assets/images/logo.png";
 
 function Hero() {
   return (
@@ -78,7 +79,7 @@ function Hero() {
 
             <div className="hero-card-content">
               {/* <span>INNOVATION ECOSYSTEM</span> */}
-              <strong>आROH</strong>
+              <img src={aarohLogo} alt="AAROH Logo" className="hero-logo-image" />
               <p>Connecting Student Innovation</p>
             </div>
           </motion.div>
