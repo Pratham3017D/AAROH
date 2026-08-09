@@ -182,44 +182,6 @@ Lucide React
 
 Responsive & component-based
 
-📂 Project Structure
-
-src/
-│
-├── assets/
-│
-├── components/
-│   ├── common/
-│   ├── cta/
-│   ├── features/
-│   ├── footer/
-│   ├── hero/
-│   ├── howAaroh/
-│   ├── lifecycle/
-│   ├── navbar/
-│   ├── stats/
-│   └── whyAaroh/
-│
-├── context/
-├── hooks/
-├── layouts/
-│
-├── pages/
-│   ├── Admin/
-│   ├── Auth/
-│   ├── Faculty/
-│   ├── Landing/
-│   └── Student/
-│
-├── routes/
-├── services/
-├── styles/
-│   └── globals.css
-│
-├── utils/
-│
-├── App.jsx
-└── main.jsx
 
 🛠️ Tech Stack
 
