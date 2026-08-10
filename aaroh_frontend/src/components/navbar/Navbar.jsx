@@ -21,7 +21,7 @@ function Navbar() {
           <a href="#features">Features</a>
 
           {/* Projects now opens Explore Ideas */}
-          <Link to="/explore">Projects</Link>
+          <Link to="/explore">Explore</Link>
 
           <a href="#universities">Universities</a>
 
