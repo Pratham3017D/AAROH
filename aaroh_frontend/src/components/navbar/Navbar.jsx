@@ -16,11 +16,10 @@ function Navbar() {
           />
         </Link>
 
-        {/* Navigation */}
+        {/* Center Navigation */}
         <nav className="nav-links">
           <a href="#features">Features</a>
 
-          {/* Projects now opens Explore Ideas */}
           <Link to="/explore">Explore</Link>
 
           <a href="#universities">Universities</a>
@@ -35,11 +34,23 @@ function Navbar() {
             Login
           </button>
 
-          {/* Get Started → Submit Innovation */}
-          <Link to="/submit" className="primary-btn">
+          <Link
+            to="/submit"
+            className="primary-btn"
+          >
             Get Started
           </Link>
 
+          {/* Profile */}
+          <Link
+            to="/profile"
+            className="navbar-profile"
+            aria-label="Open Profile"
+          >
+            <span>PR</span>
+          </Link>
+
+          {/* Mobile Menu */}
           <button
             className="menu-btn"
             aria-label="Open menu"
@@ -48,6 +59,7 @@ function Navbar() {
           </button>
 
         </div>
+
       </div>
     </header>
   );
