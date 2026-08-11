@@ -8807,3 +8807,896 @@ img {
   }
 
 }
+
+/* =========================================================
+   ABOUT AAROH
+   ========================================================= */
+
+.about-section {
+  position: relative;
+
+  padding: 120px 24px 100px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(201, 47, 109, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 88% 65%,
+      rgba(70, 88, 120, 0.08),
+      transparent 30%
+    );
+}
+
+
+.about-section > * {
+  width: min(1160px, 100%);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.about-hero {
+  position: relative;
+
+  text-align: center;
+
+  padding:
+    20px 20px 75px;
+}
+
+
+.about-eyebrow {
+  display: inline-block;
+
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.65rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.17em;
+}
+
+
+.about-hero h2 {
+  max-width: 820px;
+
+  margin:
+    17px auto 18px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(2.2rem, 5vw, 4.3rem);
+
+  line-height:
+    1.08;
+
+  letter-spacing:
+    -0.05em;
+}
+
+
+.about-hero h2 span {
+  display: block;
+
+  color:
+    var(--primary-hover);
+}
+
+
+.about-hero p {
+  max-width: 700px;
+
+  margin:
+    0 auto;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.9rem;
+
+  line-height:
+    1.85;
+}
+
+
+.about-orb {
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  border-radius: 50%;
+
+  filter:
+    blur(80px);
+
+  pointer-events: none;
+}
+
+
+.about-orb-one {
+  top: 0;
+  left: 8%;
+
+  background:
+    rgba(201, 47, 109, 0.08);
+}
+
+
+.about-orb-two {
+  right: 8%;
+  bottom: 0;
+
+  background:
+    rgba(70, 88, 120, 0.08);
+}
+
+
+/* =========================================================
+   PROBLEM / SOLUTION
+   ========================================================= */
+
+.about-problem-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 16px;
+}
+
+
+.about-problem-card,
+.about-solution-card {
+  min-height: 300px;
+
+  padding:
+    31px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    20px;
+
+  background:
+    rgba(17, 24, 39, 0.52);
+
+  backdrop-filter:
+    blur(15px);
+}
+
+
+.about-solution-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(201, 47, 109, 0.095),
+      rgba(17, 24, 39, 0.55)
+    );
+
+  border-color:
+    rgba(201, 47, 109, 0.17);
+}
+
+
+.about-card-label {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.62rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.14em;
+}
+
+
+.about-problem-card h3,
+.about-solution-card h3 {
+  max-width:
+    430px;
+
+  margin:
+    16px 0 13px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.5rem;
+
+  line-height:
+    1.3;
+
+  letter-spacing:
+    -0.03em;
+}
+
+
+.about-problem-card p,
+.about-solution-card p {
+  max-width:
+    480px;
+
+  margin: 0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.78rem;
+
+  line-height:
+    1.75;
+}
+
+
+.about-problem-flow {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top:
+    35px;
+}
+
+
+.about-problem-flow span {
+  padding:
+    7px 9px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(246, 238, 223, 0.025);
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.56rem;
+
+  letter-spacing:
+    0.06em;
+}
+
+
+.about-problem-flow svg {
+  color:
+    var(--muted-dark);
+}
+
+
+.about-solution-highlight {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  margin-top:
+    31px;
+
+  padding:
+    10px 13px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.17);
+
+  border-radius:
+    9px;
+
+  background:
+    rgba(201, 47, 109, 0.06);
+
+  color:
+    var(--text-soft);
+
+  font-size:
+    0.66rem;
+}
+
+
+.about-solution-highlight svg {
+  color:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   JOURNEY
+   ========================================================= */
+
+.about-journey {
+  padding-top:
+    100px;
+}
+
+
+.about-section-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom:
+    35px;
+}
+
+
+.about-section-heading > div span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.62rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.14em;
+}
+
+
+.about-section-heading h3 {
+  margin:
+    9px 0 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.7rem;
+
+  letter-spacing:
+    -0.035em;
+}
+
+
+.about-section-heading p {
+  max-width:
+    410px;
+
+  margin: 0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.72rem;
+
+  line-height:
+    1.7;
+}
+
+
+.about-journey-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 10px;
+}
+
+
+.about-journey-card {
+  min-height:
+    230px;
+
+  padding:
+    21px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    15px;
+
+  background:
+    rgba(23, 28, 40, 0.55);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.about-journey-card:hover {
+  transform:
+    translateY(-5px);
+
+  border-color:
+    rgba(201, 47, 109, 0.25);
+
+  background:
+    rgba(201, 47, 109, 0.045);
+}
+
+
+.about-journey-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.about-journey-number {
+  color:
+    var(--muted-dark);
+
+  font-size:
+    0.6rem;
+
+  font-weight:
+    800;
+}
+
+
+.about-journey-icon {
+  width:
+    36px;
+
+  height:
+    36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius:
+    9px;
+
+  background:
+    rgba(201, 47, 109, 0.09);
+
+  color:
+    var(--primary-hover);
+}
+
+
+.about-journey-card h4 {
+  margin:
+    30px 0 8px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    0.9rem;
+}
+
+
+.about-journey-card p {
+  margin: 0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.67rem;
+
+  line-height:
+    1.7;
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.about-philosophy {
+  padding:
+    125px 20px;
+
+  text-align:
+    center;
+}
+
+
+.about-philosophy h3 {
+  margin:
+    15px 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(2rem, 5vw, 3.7rem);
+
+  letter-spacing:
+    -0.05em;
+}
+
+
+.about-philosophy h3 span {
+  color:
+    var(--primary-hover);
+}
+
+
+.about-philosophy h3 strong {
+  color:
+    var(--muted);
+}
+
+
+.about-philosophy p {
+  max-width:
+    600px;
+
+  margin:
+    0 auto;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.82rem;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================================================
+   VISION
+   ========================================================= */
+
+.about-vision {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  padding:
+    43px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 47, 109, 0.075),
+      rgba(23, 28, 40, 0.65)
+    );
+}
+
+
+.about-vision-content {
+  max-width:
+    650px;
+}
+
+
+.about-vision-content h3 {
+  margin:
+    13px 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(1.7rem, 4vw, 2.7rem);
+
+  line-height:
+    1.2;
+
+  letter-spacing:
+    -0.04em;
+}
+
+
+.about-vision-content p {
+  margin: 0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.76rem;
+
+  line-height:
+    1.75;
+}
+
+
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.about-cta {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top:
+    18px;
+
+  padding:
+    28px 31px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.16);
+
+  border-radius:
+    17px;
+
+  background:
+    rgba(201, 47, 109, 0.055);
+}
+
+
+.about-cta > div span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.58rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.13em;
+}
+
+
+.about-cta h3 {
+  margin:
+    6px 0 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.05rem;
+}
+
+
+.about-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding:
+    11px 17px;
+
+  border-radius:
+    9px;
+
+  background:
+    var(--primary);
+
+  color:
+    var(--cream);
+
+  text-decoration:
+    none;
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    700;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.about-cta-button:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .about-journey-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 720px) {
+
+  .about-section {
+    padding:
+      90px 17px 70px;
+  }
+
+
+  .about-problem-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .about-section-heading {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+    gap:
+      15px;
+  }
+
+
+  .about-journey-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .about-vision {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+    padding:
+      30px;
+  }
+
+
+  .about-vision-mark {
+    align-self:
+      center;
+  }
+
+
+  .about-cta {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .about-hero {
+    padding-bottom:
+      55px;
+  }
+
+
+  .about-hero h2 {
+    font-size:
+      2.15rem;
+  }
+
+
+  .about-problem-card,
+  .about-solution-card {
+    padding:
+      24px;
+  }
+
+
+  .about-journey-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .about-philosophy {
+    padding:
+      90px 10px;
+  }
+
+
+  .about-vision {
+    padding:
+      25px;
+  }
+
+}
