@@ -139,6 +139,7 @@ Matching
 Recommendations
 Semantic Discovery
 Personalized Insights
+</div>
 
 🔑 Technical USP
 
