@@ -113,7 +113,7 @@ Connect proven skills and projects with internships, competitions, research and 
 🏗️ Technical Direction
 <div align="center">
 AAROH USERS<br>
-Students  •  Faculty  •  Institutions 
+Students  •  Mentors  •  Institutions 
 <br>  
 <br>
 REACT + VITE <br>
