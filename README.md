@@ -112,32 +112,32 @@ Connect proven skills and projects with internships, competitions, research and 
 
 🏗️ Technical Direction
 <div align="center">
-AAROH USERS
+AAROH USERS<br>
 Students  •  Faculty  •  Institutions 
 <br>  
 <br>
-REACT + VITE 
+REACT + VITE <br>
 Profiles • Projects • Teams • Showcase • Discovery   
 <br>  
 <br>
-REST APIs
+REST APIs <br>
 <br>  
 <br>
-NODE.JS + EXPRESS
+NODE.JS + EXPRESS <br>
 Auth • Projects • Teams • Reviews • Opportunities 
 <br>  
 <br>
-MONGODB
-Users
-Projects
-Teams
+MONGODB <br>
+Users<br>
+Projects<br>
+Teams<br>
 Opportunities
 <br>  
 <br>
-AI ENGINE
-Matching
-Recommendations
-Semantic Discovery
+AI ENGINE<br>
+Matching<br>
+Recommendations<br>
+Semantic Discovery<br>
 Personalized Insights
 </div>
 
