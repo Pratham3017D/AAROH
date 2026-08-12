@@ -24,7 +24,7 @@ function Navbar() {
 
           <a href="#universities">Universities</a>
 
-          <a href="/about">About</a>
+          <a href="#about">About</a>
         </nav>
 
         {/* Actions */}
