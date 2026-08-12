@@ -114,26 +114,26 @@ Connect proven skills and projects with internships, competitions, research and 
 <div align="center">
 AAROH USERS<br>
 Students  •  Mentors  •  Institutions 
-<br>  
-<br>
+|<br>
+↓<br>
 REACT + VITE <br>
 Profiles • Projects • Teams • Showcase • Discovery   
-<br>  
-<br>
+|<br>
+↓<br>
 REST APIs <br>
-<br>  
-<br>
+|<br>
+↓<br>
 NODE.JS + EXPRESS <br>
 Auth • Projects • Teams • Reviews • Opportunities 
-<br>  
-<br>
+|<br>
+↓<br>
 MONGODB <br>
 Users<br>
 Projects<br>
 Teams<br>
 Opportunities
-<br>  
-<br>
+|<br>
+↓<br>
 AI ENGINE<br>
 Matching<br>
 Recommendations<br>
