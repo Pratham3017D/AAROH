@@ -114,13 +114,13 @@ Connect proven skills and projects with internships, competitions, research and 
 
 ┌─────────────────────────────────────────────────────────┐
 │                       AAROH USERS                       │
-│     Students  •  Faculty  •  Institutions  •  Industry │
+│           Students  •  Faculty  •  Institutions         │
 └───────────────────────────┬─────────────────────────────┘
                             │
                             ▼
 ┌─────────────────────────────────────────────────────────┐
 │                    REACT + VITE                         │
-│ Profiles • Projects • Teams • Showcase • Discovery     │
+│  Profiles • Projects • Teams • Showcase • Discovery     │
 └───────────────────────────┬─────────────────────────────┘
                             │
                        REST APIs
@@ -128,7 +128,7 @@ Connect proven skills and projects with internships, competitions, research and 
                             ▼
 ┌─────────────────────────────────────────────────────────┐
 │                 NODE.JS + EXPRESS                       │
-│ Auth • Projects • Teams • Reviews • Opportunities      │
+│  Auth • Projects • Teams • Reviews • Opportunities      │
 └──────────────────┬──────────────────────┬───────────────┘
                    │                      │
                    ▼                      ▼
