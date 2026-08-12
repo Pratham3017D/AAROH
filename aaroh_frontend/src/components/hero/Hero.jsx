@@ -40,12 +40,12 @@ function Hero() {
           </p>
 
           <div className="hero-actions">
-            <Link to="/signup" className="hero-primary-btn">
+            <Link to="/login" className="hero-primary-btn">
               Start Building
               <ArrowRight size={18} />
             </Link>
 
-            <a href="#features" className="hero-secondary-btn">
+            <a href="/explore" className="hero-secondary-btn">
               Explore AAROH
             </a>
           </div>

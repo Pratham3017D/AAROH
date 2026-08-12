@@ -9700,3 +9700,2630 @@ img {
   }
 
 }
+
+/* =========================================================
+   AAROH LOGIN PAGE
+   ========================================================= */
+
+.login-page {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 110px 20px 60px;
+
+  overflow: hidden;
+
+  background:
+    var(--background);
+}
+
+
+.login-wrapper {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(430px, 100%);
+}
+
+
+/* =========================================================
+   BACK
+   ========================================================= */
+
+.login-back {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.7rem;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.login-back:hover {
+  color:
+    var(--cream);
+}
+
+
+/* =========================================================
+   GLOW
+   ========================================================= */
+
+.login-glow {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  filter: blur(110px);
+
+  pointer-events: none;
+}
+
+
+.login-glow-one {
+  top: -200px;
+  left: -120px;
+
+  background:
+    rgba(201, 47, 109, 0.09);
+}
+
+
+.login-glow-two {
+  right: -160px;
+  bottom: -220px;
+
+  background:
+    rgba(75, 90, 120, 0.08);
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.login-card {
+  padding:
+    38px 36px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(45, 55, 72, 0.38),
+      rgba(17, 24, 39, 0.76)
+    );
+
+  backdrop-filter:
+    blur(20px);
+
+  box-shadow:
+    0 30px 80px
+    rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.login-logo {
+  display: flex;
+
+  justify-content: center;
+
+  margin-bottom:
+    23px;
+}
+
+
+.login-logo img {
+  width:
+    100px;
+
+  height:
+    auto;
+
+  object-fit:
+    contain;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.login-heading {
+  text-align:
+    center;
+
+  margin-bottom:
+    27px;
+}
+
+
+.login-heading span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.61rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.15em;
+}
+
+
+.login-heading h1 {
+  margin:
+    9px 0 8px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.75rem;
+
+  letter-spacing:
+    -0.04em;
+}
+
+
+.login-heading p {
+  margin:
+    0 auto;
+
+  max-width:
+    330px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.72rem;
+
+  line-height:
+    1.65;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.login-form {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    18px;
+}
+
+
+.login-field {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    8px;
+}
+
+
+.login-field label,
+.login-label-row label {
+  color:
+    var(--text-soft);
+
+  font-size:
+    0.68rem;
+
+  font-weight:
+    600;
+}
+
+
+.login-label-row {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+}
+
+
+.login-label-row a {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.62rem;
+
+  text-decoration:
+    none;
+}
+
+
+.login-input-wrapper {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    9px;
+
+  height:
+    46px;
+
+  padding:
+    0 13px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(4, 8, 21, 0.38);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-input-wrapper:focus-within {
+  border-color:
+    rgba(201, 47, 109, 0.45);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(201, 47, 109, 0.06);
+}
+
+
+.login-input-wrapper > svg {
+  flex-shrink:
+    0;
+
+  color:
+    var(--muted-dark);
+}
+
+
+.login-input-wrapper input {
+  width:
+    100%;
+
+  height:
+    100%;
+
+  border:
+    none;
+
+  outline:
+    none;
+
+  background:
+    transparent;
+
+  color:
+    var(--cream);
+
+  font-family:
+    inherit;
+
+  font-size:
+    0.73rem;
+}
+
+
+.login-input-wrapper input::placeholder {
+  color:
+    var(--muted-dark);
+}
+
+
+.password-toggle {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    3px;
+
+  border:
+    none;
+
+  background:
+    transparent;
+
+  color:
+    var(--muted);
+
+  cursor:
+    pointer;
+}
+
+
+/* =========================================================
+   REMEMBER
+   ========================================================= */
+
+.remember-me {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.65rem;
+
+  cursor:
+    pointer;
+}
+
+
+.remember-me input {
+  accent-color:
+    var(--primary);
+}
+
+
+/* =========================================================
+   SIGN IN
+   ========================================================= */
+
+.login-submit {
+  width:
+    100%;
+
+  height:
+    46px;
+
+  margin-top:
+    2px;
+
+  border:
+    none;
+
+  border-radius:
+    10px;
+
+  background:
+    var(--primary);
+
+  color:
+    var(--cream);
+
+  font-family:
+    inherit;
+
+  font-size:
+    0.73rem;
+
+  font-weight:
+    700;
+
+  cursor:
+    pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.login-submit:hover {
+  background:
+    var(--primary-hover);
+
+  transform:
+    translateY(-1px);
+
+  box-shadow:
+    0 9px 25px
+    rgba(201, 47, 109, 0.18);
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.login-divider {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    12px;
+
+  margin:
+    24px 0 17px;
+
+  color:
+    var(--muted-dark);
+
+  font-size:
+    0.55rem;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+.login-divider::before,
+.login-divider::after {
+  content:
+    "";
+
+  flex:
+    1;
+
+  height:
+    1px;
+
+  background:
+    var(--border);
+}
+
+
+/* =========================================================
+   GOOGLE
+   ========================================================= */
+
+.google-login {
+  width:
+    100%;
+
+  height:
+    44px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    9px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(246, 238, 223, 0.025);
+
+  color:
+    var(--text-soft);
+
+  font-family:
+    inherit;
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    600;
+
+  cursor:
+    pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.google-login:hover {
+  background:
+    rgba(246, 238, 223, 0.05);
+
+  border-color:
+    var(--border-light);
+}
+
+
+.google-icon {
+  width:
+    22px;
+
+  height:
+    22px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--cream);
+
+  color:
+    #4285f4;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size:
+    0.75rem;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   REGISTER
+   ========================================================= */
+
+.login-register {
+  margin:
+    22px 0 0;
+
+  text-align:
+    center;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.67rem;
+}
+
+
+.login-register a {
+  margin-left:
+    5px;
+
+  color:
+    var(--primary-hover);
+
+  font-weight:
+    600;
+
+  text-decoration:
+    none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.login-footer {
+  margin:
+    20px 0 0;
+
+  text-align:
+    center;
+
+  color:
+    var(--muted-dark);
+
+  font-size:
+    0.57rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+  .login-page {
+    padding:
+      90px 15px 40px;
+  }
+
+
+  .login-card {
+    padding:
+      30px 22px;
+  }
+
+
+  .login-heading h1 {
+    font-size:
+      1.55rem;
+  }
+
+}
+
+
+/* =========================================================
+   AAROH FEATURES PAGE
+   ========================================================= */
+
+.features-page {
+  min-height: 100vh;
+
+  padding:
+    120px 24px 90px;
+
+  overflow: hidden;
+
+  background:
+    var(--background);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.features-hero {
+  position: relative;
+
+  width: min(900px, 100%);
+
+  margin:
+    0 auto;
+
+  padding:
+    30px 20px 85px;
+
+  text-align:
+    center;
+}
+
+
+.features-eyebrow {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.63rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.17em;
+}
+
+
+.features-hero h1 {
+  margin:
+    16px 0 18px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(2.3rem, 5vw, 4.2rem);
+
+  line-height:
+    1.08;
+
+  letter-spacing:
+    -0.05em;
+}
+
+
+.features-hero h1 span {
+  display:
+    block;
+
+  color:
+    var(--primary-hover);
+}
+
+
+.features-hero p {
+  width:
+    min(680px, 100%);
+
+  margin:
+    0 auto;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.85rem;
+
+  line-height:
+    1.8;
+}
+
+
+.features-glow {
+  position:
+    absolute;
+
+  width:
+    280px;
+
+  height:
+    280px;
+
+  border-radius:
+    50%;
+
+  filter:
+    blur(90px);
+
+  pointer-events:
+    none;
+}
+
+
+.features-glow-one {
+  top:
+    -100px;
+
+  left:
+    -80px;
+
+  background:
+    rgba(201, 47, 109, 0.09);
+}
+
+
+.features-glow-two {
+  right:
+    -100px;
+
+  bottom:
+    -100px;
+
+  background:
+    rgba(70, 88, 120, 0.08);
+}
+
+
+/* =========================================================
+   FEATURE GRID
+   ========================================================= */
+
+.features-grid {
+  width:
+    min(1160px, 100%);
+
+  margin:
+    0 auto;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    12px;
+}
+
+
+.feature-card {
+  min-height:
+    295px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  padding:
+    24px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    17px;
+
+  background:
+    rgba(23, 28, 40, 0.58);
+
+  backdrop-filter:
+    blur(15px);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.feature-card:hover {
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(201, 47, 109, 0.27);
+
+  background:
+    rgba(201, 47, 109, 0.045);
+}
+
+
+.feature-card-top {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+}
+
+
+.feature-number {
+  color:
+    var(--muted-dark);
+
+  font-size:
+    0.59rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+.feature-icon {
+  width:
+    42px;
+
+  height:
+    42px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    11px;
+
+  background:
+    rgba(201, 47, 109, 0.09);
+
+  color:
+    var(--primary-hover);
+}
+
+
+.feature-card h2 {
+  margin:
+    32px 0 9px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.05rem;
+
+  letter-spacing:
+    -0.025em;
+}
+
+
+.feature-card p {
+  margin:
+    0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.69rem;
+
+  line-height:
+    1.75;
+}
+
+
+.feature-link {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    7px;
+
+  margin-top:
+    auto;
+
+  padding-top:
+    20px;
+
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.64rem;
+
+  font-weight:
+    700;
+
+  text-decoration:
+    none;
+}
+
+
+.feature-link svg {
+  transition:
+    transform 0.2s ease;
+}
+
+
+.feature-link:hover svg {
+  transform:
+    translateX(3px);
+}
+
+
+/* =========================================================
+   FLOW
+   ========================================================= */
+
+.features-flow {
+  width:
+    min(1160px, 100%);
+
+  margin:
+    120px auto 0;
+}
+
+
+.features-section-heading {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  text-align:
+    center;
+}
+
+
+.features-section-heading > span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.61rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.15em;
+}
+
+
+.features-section-heading h2 {
+  margin:
+    12px 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(1.8rem, 4vw, 2.8rem);
+
+  letter-spacing:
+    -0.04em;
+}
+
+
+.features-section-heading h2 strong {
+  color:
+    var(--primary-hover);
+}
+
+
+.features-section-heading p {
+  max-width:
+    570px;
+
+  margin:
+    0;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.75rem;
+
+  line-height:
+    1.7;
+}
+
+
+.features-flow-track {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+
+  margin-top:
+    42px;
+
+  padding:
+    22px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    17px;
+
+  background:
+    rgba(23, 28, 40, 0.48);
+
+  overflow-x:
+    auto;
+}
+
+
+.features-flow-item {
+  flex-shrink:
+    0;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    10px 13px;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius:
+    9px;
+
+  background:
+    rgba(246, 238, 223, 0.025);
+
+  color:
+    var(--text-soft);
+
+  font-size:
+    0.64rem;
+}
+
+
+.features-flow-item svg {
+  color:
+    var(--primary-hover);
+}
+
+
+.features-flow-arrow {
+  flex-shrink:
+    0;
+
+  color:
+    var(--muted-dark);
+}
+
+
+/* =========================================================
+   HIGHLIGHT
+   ========================================================= */
+
+.features-highlight {
+  width:
+    min(1160px, 100%);
+
+  min-height:
+    430px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    50px;
+
+  margin:
+    110px auto 0;
+
+  padding:
+    55px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.17);
+
+  border-radius:
+    24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 47, 109, 0.09),
+      rgba(23, 28, 40, 0.65)
+    );
+
+  overflow:
+    hidden;
+}
+
+
+.features-highlight-content {
+  max-width:
+    560px;
+}
+
+
+.features-highlight-content > span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.61rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.15em;
+}
+
+
+.features-highlight-content h2 {
+  margin:
+    13px 0;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(2rem, 4vw, 3.2rem);
+
+  line-height:
+    1.15;
+
+  letter-spacing:
+    -0.045em;
+}
+
+
+.features-highlight-content p {
+  max-width:
+    500px;
+
+  margin:
+    0 0 25px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    0.77rem;
+
+  line-height:
+    1.8;
+}
+
+
+.features-cta,
+.features-bottom-button {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+
+  padding:
+    11px 17px;
+
+  border-radius:
+    9px;
+
+  background:
+    var(--primary);
+
+  color:
+    var(--cream);
+
+  font-size:
+    0.68rem;
+
+  font-weight:
+    700;
+
+  text-decoration:
+    none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.features-cta:hover,
+.features-bottom-button:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   VISUAL ORBIT
+   ========================================================= */
+
+.features-highlight-visual {
+  position:
+    relative;
+
+  width:
+    330px;
+
+  height:
+    330px;
+
+  flex-shrink:
+    0;
+}
+
+
+.features-core {
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  left:
+    50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  width:
+    110px;
+
+  height:
+    110px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    6px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.28);
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(201, 47, 109, 0.1);
+
+  color:
+    var(--primary-hover);
+
+  box-shadow:
+    0 0 70px
+    rgba(201, 47, 109, 0.1);
+}
+
+
+.features-core span {
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    0.7rem;
+
+  font-weight:
+    700;
+}
+
+
+.features-orbit {
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  left:
+    50%;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.18);
+
+  border-radius:
+    50%;
+
+  transform:
+    translate(-50%, -50%);
+}
+
+
+.features-orbit span {
+  position:
+    absolute;
+
+  padding:
+    6px 9px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.18);
+
+  border-radius:
+    7px;
+
+  background:
+    #111827;
+
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.5rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.08em;
+}
+
+
+.orbit-one {
+  width:
+    230px;
+
+  height:
+    230px;
+}
+
+
+.orbit-one span {
+  top:
+    -8px;
+
+  left:
+    50%;
+
+  transform:
+    translateX(-50%);
+}
+
+
+.orbit-two {
+  width:
+    320px;
+
+  height:
+    320px;
+
+  border-color:
+    rgba(246, 238, 223, 0.08);
+}
+
+
+.orbit-two span {
+  right:
+    -10px;
+
+  top:
+    50%;
+
+  transform:
+    translateY(-50%);
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+   ========================================================= */
+
+.features-bottom-cta {
+  width:
+    min(850px, 100%);
+
+  margin:
+    110px auto 0;
+
+  text-align:
+    center;
+}
+
+
+.features-bottom-cta > span {
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.6rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.15em;
+}
+
+
+.features-bottom-cta h2 {
+  margin:
+    13px 0 25px;
+
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    clamp(1.8rem, 4vw, 2.8rem);
+
+  line-height:
+    1.2;
+
+  letter-spacing:
+    -0.04em;
+}
+
+
+.features-bottom-cta h2 strong {
+  color:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .features-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .features-page {
+    padding:
+      105px 17px 70px;
+  }
+
+
+  .features-highlight {
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+    padding:
+      38px 28px;
+  }
+
+
+  .features-highlight-visual {
+    align-self:
+      center;
+
+    transform:
+      scale(0.85);
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .features-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .feature-card {
+    min-height:
+      260px;
+  }
+
+
+  .features-flow-track {
+    justify-content:
+      flex-start;
+  }
+
+
+  .features-highlight-visual {
+    transform:
+      scale(0.7);
+
+    transform-origin:
+      center;
+  }
+
+}
+
+/* =========================================================
+   AAROH UNIVERSITIES PAGE
+   ========================================================= */
+
+.universities-page {
+  min-height: 100vh;
+
+  padding: 120px 24px 90px;
+
+  overflow: hidden;
+
+  background: var(--background);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.universities-hero {
+  position: relative;
+
+  width: min(900px, 100%);
+
+  margin: 0 auto;
+
+  padding: 25px 20px 95px;
+
+  text-align: center;
+}
+
+
+.universities-eyebrow {
+  color: var(--primary-hover);
+
+  font-size: 0.63rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+}
+
+
+.universities-hero h1 {
+  margin: 16px 0 18px;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
+
+  line-height: 1.08;
+
+  letter-spacing: -0.05em;
+}
+
+
+.universities-hero h1 span {
+  display: block;
+
+  color: var(--primary-hover);
+}
+
+
+.universities-hero p {
+  width: min(690px, 100%);
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  font-size: 0.85rem;
+
+  line-height: 1.8;
+}
+
+
+.universities-hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-top: 28px;
+}
+
+
+.universities-primary-btn,
+.universities-secondary-btn,
+.university-vision-btn,
+.university-cta-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  border-radius: 9px;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.universities-primary-btn,
+.university-cta-btn {
+  background: var(--primary);
+
+  color: var(--cream);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.universities-primary-btn:hover,
+.university-cta-btn:hover {
+  transform: translateY(-2px);
+
+  background: var(--primary-hover);
+}
+
+
+.universities-secondary-btn {
+  border: 1px solid var(--border);
+
+  background: rgba(246, 238, 223, 0.025);
+
+  color: var(--text-soft);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.universities-secondary-btn:hover {
+  background: rgba(246, 238, 223, 0.05);
+
+  border-color: var(--border-light);
+}
+
+
+.universities-glow {
+  position: absolute;
+
+  width: 300px;
+
+  height: 300px;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  pointer-events: none;
+}
+
+
+.universities-glow-one {
+  top: -120px;
+
+  left: -100px;
+
+  background: rgba(201, 47, 109, 0.09);
+}
+
+
+.universities-glow-two {
+  right: -100px;
+
+  bottom: -120px;
+
+  background: rgba(70, 88, 120, 0.08);
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.university-section-heading {
+  text-align: center;
+
+  margin-bottom: 38px;
+}
+
+
+.university-section-heading > span {
+  color: var(--primary-hover);
+
+  font-size: 0.61rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+
+.university-section-heading h2 {
+  margin: 12px 0;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.04em;
+}
+
+
+.university-section-heading h2 strong {
+  color: var(--primary-hover);
+}
+
+
+.university-section-heading p {
+  max-width: 610px;
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  font-size: 0.75rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   ECOSYSTEM
+   ========================================================= */
+
+.university-ecosystem,
+.university-benefits,
+.university-journey {
+  width: min(1160px, 100%);
+
+  margin: 0 auto;
+}
+
+
+.university-ecosystem-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+
+.university-ecosystem-card {
+  min-height: 235px;
+
+  padding: 25px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 17px;
+
+  background: rgba(23, 28, 40, 0.56);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.university-ecosystem-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(201, 47, 109, 0.25);
+
+  background: rgba(201, 47, 109, 0.045);
+}
+
+
+.university-card-icon,
+.university-benefit-icon {
+  width: 43px;
+
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: rgba(201, 47, 109, 0.09);
+
+  color: var(--primary-hover);
+}
+
+
+.university-ecosystem-card h3 {
+  margin: 31px 0 9px;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.98rem;
+}
+
+
+.university-ecosystem-card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.68rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.university-benefits {
+  margin-top: 120px;
+}
+
+
+.university-benefits-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+
+.university-benefit-card {
+  padding: 25px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 16px;
+
+  background: rgba(17, 24, 39, 0.48);
+}
+
+
+.university-benefit-card h3 {
+  margin: 22px 0 8px;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.88rem;
+}
+
+
+.university-benefit-card p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.67rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   JOURNEY
+   ========================================================= */
+
+.university-journey {
+  margin-top: 120px;
+}
+
+
+.university-journey-track {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  padding: 25px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  background: rgba(23, 28, 40, 0.48);
+
+  overflow-x: auto;
+}
+
+
+.university-step {
+  min-width: 175px;
+
+  text-align: center;
+}
+
+
+.university-step > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--muted-dark);
+
+  font-size: 0.56rem;
+
+  font-weight: 800;
+}
+
+
+.university-step > div {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  background: rgba(201, 47, 109, 0.09);
+
+  color: var(--primary-hover);
+}
+
+
+.university-step h3 {
+  margin: 13px 0 6px;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.8rem;
+}
+
+
+.university-step p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.61rem;
+
+  line-height: 1.6;
+}
+
+
+.university-step-arrow {
+  flex-shrink: 0;
+
+  color: var(--muted-dark);
+}
+
+
+/* =========================================================
+   VISION
+   ========================================================= */
+
+.university-vision {
+  width: min(1160px, 100%);
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin: 110px auto 0;
+
+  padding: 50px;
+
+  border: 1px solid rgba(201, 47, 109, 0.17);
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 47, 109, 0.08),
+      rgba(23, 28, 40, 0.65)
+    );
+}
+
+
+.university-vision-content {
+  max-width: 590px;
+}
+
+
+.university-vision-content > span {
+  color: var(--primary-hover);
+
+  font-size: 0.6rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+
+.university-vision-content h2 {
+  margin: 13px 0;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(2rem, 4vw, 3.1rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.045em;
+}
+
+
+.university-vision-content h2 strong {
+  color: var(--primary-hover);
+}
+
+
+.university-vision-content p {
+  max-width: 500px;
+
+  margin: 0 0 25px;
+
+  color: var(--muted);
+
+  font-size: 0.76rem;
+
+  line-height: 1.8;
+}
+
+
+.university-vision-btn {
+  background: rgba(246, 238, 223, 0.035);
+
+  border: 1px solid var(--border);
+
+  color: var(--text-soft);
+}
+
+
+.university-vision-btn:hover {
+  border-color: var(--border-light);
+}
+
+
+/* =========================================================
+   VISUAL
+   ========================================================= */
+
+.university-vision-visual {
+  position: relative;
+
+  width: 310px;
+
+  height: 310px;
+
+  flex-shrink: 0;
+}
+
+
+.university-visual-ring {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(201, 47, 109, 0.16);
+}
+
+
+.ring-one {
+  width: 210px;
+
+  height: 210px;
+}
+
+
+.ring-two {
+  width: 305px;
+
+  height: 305px;
+
+  border-color: rgba(246, 238, 223, 0.07);
+}
+
+
+.university-visual-core {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 105px;
+
+  height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  border-radius: 50%;
+
+  background: rgba(201, 47, 109, 0.1);
+
+  border: 1px solid rgba(201, 47, 109, 0.25);
+
+  color: var(--primary-hover);
+
+  box-shadow:
+    0 0 65px rgba(201, 47, 109, 0.09);
+}
+
+
+.university-visual-core span {
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+}
+
+
+.university-visual-core small {
+  color: var(--muted);
+
+  font-size: 0.4rem;
+
+  letter-spacing: 0.1em;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.university-bottom-cta {
+  width: min(850px, 100%);
+
+  margin: 110px auto 0;
+
+  text-align: center;
+}
+
+
+.university-bottom-cta > span {
+  color: var(--primary-hover);
+
+  font-size: 0.6rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+
+.university-bottom-cta h2 {
+  margin: 13px 0;
+
+  color: var(--cream);
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.04em;
+}
+
+
+.university-bottom-cta h2 strong {
+  color: var(--primary-hover);
+}
+
+
+.university-bottom-cta p {
+  margin: 0 auto 25px;
+
+  color: var(--muted);
+
+  font-size: 0.75rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .university-ecosystem-grid,
+  .university-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .universities-page {
+    padding: 105px 17px 70px;
+  }
+
+  .universities-hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .university-vision {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 35px 28px;
+  }
+
+  .university-vision-visual {
+    align-self: center;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .university-ecosystem-grid,
+  .university-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .university-journey-track {
+    justify-content: flex-start;
+  }
+
+  .university-vision-visual {
+    transform: scale(0.78);
+
+    transform-origin: center;
+  }
+
+}
+
+/* =========================================================
+   PROFILE — INNOVATION STRENGTH
+   ========================================================= */
+
+.profile-strength-card {
+  overflow: hidden;
+}
+
+
+.strength-chart {
+  width: 100%;
+  height: 330px;
+
+  margin-top: 5px;
+}
+
+
+.strength-chart .recharts-wrapper {
+  overflow: visible;
+}
+
+
+.strength-chart .recharts-polar-angle-axis-tick text {
+  font-family:
+    "Inter",
+    sans-serif;
+}
+
+
+.strength-footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  padding-top: 15px;
+
+  border-top:
+    1px solid
+    var(--border);
+}
+
+
+.strength-footer > div {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 8px;
+}
+
+
+.strength-footer strong {
+  color:
+    var(--cream);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size:
+    1.05rem;
+}
+
+
+.strength-footer > div span {
+  color:
+    var(--muted);
+
+  font-size:
+    0.6rem;
+}
+
+
+.strength-status {
+  padding:
+    5px 9px;
+
+  border:
+    1px solid
+    rgba(201, 47, 109, 0.2);
+
+  border-radius:
+    7px;
+
+  background:
+    rgba(201, 47, 109, 0.07);
+
+  color:
+    var(--primary-hover);
+
+  font-size:
+    0.58rem;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   PROFILE — RADAR RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .strength-chart {
+    height: 310px;
+  }
+
+}
+
+
+@media (max-width: 750px) {
+
+  .strength-chart {
+    height: 350px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .strength-chart {
+    height: 300px;
+  }
+
+  .strength-footer {
+    margin-top: 0;
+  }
+
+}

@@ -3,7 +3,7 @@ import WhyAaroh from "../../components/whyAaroh/WhyAaroh";
 import HowAaroh from "../../components/howAaroh/HowAaroh";
 import InnovationLifecycle from "../../components/lifecycle/InnovationLifecycle";
 import Talks from "../../components/talks/Talks";
-import About from "../../components/about/About";
+import About from "../about/About";
 
 function Landing() {
   return (
@@ -13,7 +13,7 @@ function Landing() {
       <HowAaroh />
       <InnovationLifecycle />
       <Talks />
-      <About />
+      {/* <About /> */}
     </main>
   );
 }

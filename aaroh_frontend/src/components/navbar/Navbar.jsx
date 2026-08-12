@@ -18,21 +18,21 @@ function Navbar() {
 
         {/* Center Navigation */}
         <nav className="nav-links">
-          <a href="#features">Features</a>
+          <a href="/features">Features</a>
 
           <Link to="/explore">Explore</Link>
 
-          <a href="#universities">Universities</a>
+          <a href="/universities">Universities</a>
 
-          <a href="#about">About</a>
+          <a href="/about">About</a>
         </nav>
 
         {/* Actions */}
         <div className="nav-actions">
 
-          <button className="login-btn">
+          <Link to="/login" className="login-btn">
             Login
-          </button>
+          </Link>
 
           <Link
             to="/submit"
