@@ -111,34 +111,34 @@ Give student work a professional identity instead of letting projects disappear 
 Connect proven skills and projects with internships, competitions, research and industry opportunities.
 
 🏗️ Technical Direction
-
-┌─────────────────────────────────────────────────────────┐
-│                       AAROH USERS                       │
-│           Students  •  Faculty  •  Institutions         │
-└───────────────────────────┬─────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────┐
-│                    REACT + VITE                         │
-│  Profiles • Projects • Teams • Showcase • Discovery     │
-└───────────────────────────┬─────────────────────────────┘
-                            │
-                       REST APIs
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────┐
-│                 NODE.JS + EXPRESS                       │
-│  Auth • Projects • Teams • Reviews • Opportunities      │
-└──────────────────┬──────────────────────┬───────────────┘
-                   │                      │
-                   ▼                      ▼
-          ┌────────────────┐    ┌────────────────────────┐
-          │    MONGODB     │    │      AI ENGINE         │
-          │ Users          │    │ Matching               │
-          │ Projects       │    │ Recommendations        │
-          │ Teams          │    │ Semantic Discovery     │
-          │ Opportunities  │    │ Personalized Insights  │
-          └────────────────┘    └────────────────────────┘
+<div align="center">
+AAROH USERS
+Students  •  Faculty  •  Institutions 
+<br>  
+<br>
+REACT + VITE 
+Profiles • Projects • Teams • Showcase • Discovery   
+<br>  
+<br>
+REST APIs
+<br>  
+<br>
+NODE.JS + EXPRESS
+Auth • Projects • Teams • Reviews • Opportunities 
+<br>  
+<br>
+MONGODB
+Users
+Projects
+Teams
+Opportunities
+<br>  
+<br>
+AI ENGINE
+Matching
+Recommendations
+Semantic Discovery
+Personalized Insights
 
 🔑 Technical USP
 
