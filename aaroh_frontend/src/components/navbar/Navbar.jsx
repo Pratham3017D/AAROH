@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, Sun, Moon } from "lucide-react";
 import logo from "../../assets/images/logo.png";
+import { useTheme } from "../../context/ThemeContext";
 
 function Navbar() {
+  const { theme, toggleTheme } = useTheme();
   return (
     <header className="navbar">
       <div className="container navbar-content">
@@ -40,6 +42,19 @@ function Navbar() {
           >
             Get Started
           </Link>
+
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {theme === "dark" ? (
+              <Sun size={19} />
+            ) : (
+              <Moon size={19} />
+            )}
+          </button>
 
           {/* Profile */}
           <Link

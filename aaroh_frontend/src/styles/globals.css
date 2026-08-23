@@ -12327,3 +12327,2186 @@ img {
   }
 
 }
+
+
+/* =========================================
+   AAROH LIGHT THEME
+========================================= */
+
+/* =========================================================
+   AAROH — REFINED LIGHT THEME
+   ========================================================= */
+
+[data-theme="light"] {
+  /* ---------- Main ---------- */
+  --background: #faf8fb;
+  --background-deep: #f3eef5;
+
+  /* ---------- Surfaces ---------- */
+  --surface: #ffffff;
+  --surface-solid: #ffffff;
+  --surface-light: #fcf9fc;
+
+  /* ---------- Text ---------- */
+  --cream: #211923;
+  --text: #211923;
+  --text-soft: #514956;
+  --muted: #6d6672;
+  --muted-dark: #89818d;
+
+  /* ---------- Brand ---------- */
+  --primary: #c92f6d;
+  --primary-hover: #b82961;
+
+  /* ---------- Borders ---------- */
+  --border: rgba(33, 25, 35, 0.10);
+  --border-light: rgba(33, 25, 35, 0.15);
+
+  /* ---------- Shadows ---------- */
+  --shadow-dark: rgba(33, 25, 35, 0.08);
+  --shadow-primary: rgba(201, 47, 109, 0.18);
+}
+
+
+/* =========================================
+   THEME TOGGLE
+========================================= */
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--surface);
+  color: var(--text);
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* =========================================================
+   AAROH — COMPLETE LIGHT MODE
+   ========================================================= */
+
+[data-theme="light"] {
+  /* ---------- Core ---------- */
+  --background: #f7f4f8;
+  --background-deep: #eeeaf1;
+
+  --plum: #f3e8ef;
+  --slate: #e9edf3;
+  --blue-slate: #71809a;
+
+  /* ---------- Brand ---------- */
+  --primary: #c92f6d;
+  --primary-hover: #b5265e;
+
+  /* ---------- Surfaces ---------- */
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-solid: #ffffff;
+  --surface-light: #f5f1f5;
+
+  /* ---------- Text ---------- */
+  --cream: #211923;
+  --text: #211923;
+  --text-soft: #514956;
+  --muted: #6e6872;
+  --muted-dark: #8c8590;
+
+  /* ---------- Borders ---------- */
+  --border: rgba(33, 25, 35, 0.10);
+  --border-light: rgba(33, 25, 35, 0.16);
+
+  /* ---------- Shadows ---------- */
+  --shadow-dark: rgba(35, 25, 40, 0.10);
+  --shadow-primary: rgba(201, 47, 109, 0.20);
+}
+
+
+/* =========================================================
+   GLOBAL BACKGROUND
+   ========================================================= */
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(201, 47, 109, 0.07),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(74, 93, 122, 0.07),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f4f8 0%,
+      #faf7f4 40%,
+      #f1f3f7 100%
+    );
+
+  color: var(--text);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+[data-theme="light"] .navbar {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(249, 245, 250, 0.88),
+      rgba(255, 255, 255, 0.90)
+    );
+
+  border-bottom-color: rgba(33, 25, 35, 0.10);
+}
+
+[data-theme="light"] .nav-links a:hover {
+  color: var(--text);
+}
+
+[data-theme="light"] .login-btn {
+  color: var(--text);
+}
+
+[data-theme="light"] .menu-btn {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   LANDING / HERO
+   ========================================================= */
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(
+      ellipse at 12% 20%,
+      rgba(201, 47, 109, 0.10),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 85% 45%,
+      rgba(74, 93, 122, 0.08),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #faf7fa 0%,
+      #f7eef4 35%,
+      #f1f3f8 70%,
+      #f5f7fa 100%
+    );
+}
+
+[data-theme="light"] .hero-title {
+  color: var(--text);
+}
+
+[data-theme="light"] .hero-title span {
+  background:
+    linear-gradient(
+      120deg,
+      #211923 5%,
+      #c45a82 42%,
+      #c92f6d 68%,
+      #667792 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="light"] .hero-grid {
+  opacity: 0.10;
+
+  background-image:
+    linear-gradient(
+      rgba(33, 25, 35, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(33, 25, 35, 0.06) 1px,
+      transparent 1px
+    );
+}
+
+[data-theme="light"] .hero-center-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.78),
+      rgba(247, 239, 245, 0.82)
+    );
+
+  border-color: rgba(33, 25, 35, 0.10);
+
+  box-shadow:
+    0 35px 100px rgba(60, 45, 70, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="light"] .floating-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(246, 241, 247, 0.92)
+    );
+
+  border-color: rgba(33, 25, 35, 0.10);
+
+  box-shadow:
+    0 20px 50px rgba(50, 40, 60, 0.12);
+}
+
+[data-theme="light"] .floating-card strong {
+  color: var(--text);
+}
+
+[data-theme="light"] .floating-card span {
+  color: var(--muted);
+}
+
+[data-theme="light"] .hero-orbit {
+  border-color: rgba(33, 25, 35, 0.08);
+}
+
+
+/* =========================================================
+   WHY AAROH
+   ========================================================= */
+
+[data-theme="light"] .why-aaroh {
+  background:
+    linear-gradient(
+      180deg,
+      #f7f4f8 0%,
+      #faf7f8 45%,
+      #f1f3f7 100%
+    );
+}
+
+[data-theme="light"] .why-aaroh::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(247, 244, 248, 0),
+      rgba(247, 244, 248, 0.95)
+    );
+}
+
+[data-theme="light"] .why-aaroh-grid {
+  background-image:
+    linear-gradient(
+      rgba(33, 25, 35, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(33, 25, 35, 0.045) 1px,
+      transparent 1px
+    );
+}
+
+[data-theme="light"] .why-aaroh-heading h2 {
+  color: var(--text);
+}
+
+[data-theme="light"] .problem-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.80),
+      rgba(246, 241, 247, 0.78)
+    );
+
+  border-color: rgba(33, 25, 35, 0.10);
+
+  box-shadow:
+    0 25px 70px rgba(50, 40, 60, 0.08);
+}
+
+[data-theme="light"] .problem-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(248, 239, 244, 0.95)
+    );
+
+  box-shadow:
+    0 30px 80px rgba(50, 40, 60, 0.12);
+}
+
+
+/* =========================================================
+   HOW AAROH
+   ========================================================= */
+
+[data-theme="light"] .how-aaroh {
+  background:
+    radial-gradient(
+      ellipse at 80% 15%,
+      rgba(74, 93, 122, 0.07),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 20% 80%,
+      rgba(201, 47, 109, 0.06),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #f5f3f7 0%,
+      #faf7f9 50%,
+      #eef1f6 100%
+    );
+}
+
+[data-theme="light"] .innovation-line {
+  background: rgba(33, 25, 35, 0.12);
+}
+
+[data-theme="light"] .innovation-stage-marker {
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 8px rgba(201, 47, 109, 0.035),
+    0 15px 40px rgba(40, 30, 50, 0.10);
+}
+
+[data-theme="light"] .innovation-stage h3 {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   INNOVATION LIFECYCLE
+   ========================================================= */
+
+[data-theme="light"] .innovation-lifecycle {
+  background:
+    radial-gradient(
+      ellipse at 15% 45%,
+      rgba(201, 47, 109, 0.06),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 85% 20%,
+      rgba(74, 93, 122, 0.07),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f4f8 0%,
+      #faf7f9 45%,
+      #eef1f6 100%
+    );
+}
+
+[data-theme="light"] .lifecycle-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.82),
+      rgba(247, 242, 248, 0.85)
+    );
+
+  border-color: rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 25px 60px rgba(40, 30, 50, 0.08);
+}
+
+[data-theme="light"] .lifecycle-node {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   TALKS
+   ========================================================= */
+
+[data-theme="light"] .talks-section {
+  background:
+    radial-gradient(
+      ellipse at 12% 25%,
+      rgba(201, 47, 109, 0.07),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 88% 60%,
+      rgba(74, 93, 122, 0.07),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f4f8 0%,
+      #faf7f9 45%,
+      #f0f3f7 100%
+    );
+}
+
+
+/* =========================================================
+   EXPLORE
+   ========================================================= */
+
+[data-theme="light"] .explore-search,
+[data-theme="light"] .category-btn {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+[data-theme="light"] .explore-search input {
+  color: var(--text);
+}
+
+[data-theme="light"] .category-btn.active {
+  color: white;
+}
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+[data-theme="light"] .features-page {
+  background:
+    linear-gradient(
+      135deg,
+      #f8f5f9,
+      #faf7f8,
+      #f0f3f7
+    );
+}
+
+[data-theme="light"] .feature-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.86),
+      rgba(247, 242, 248, 0.88)
+    );
+
+  border-color: rgba(33, 25, 35, 0.10);
+
+  box-shadow:
+    0 20px 55px rgba(50, 40, 60, 0.07);
+}
+
+
+/* =========================================================
+   UNIVERSITIES
+   ========================================================= */
+
+[data-theme="light"] .universities-page {
+  background:
+    linear-gradient(
+      135deg,
+      #f8f5f9,
+      #faf7f8,
+      #eff2f6
+    );
+}
+
+[data-theme="light"] .university-ecosystem-card {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="light"] .universities-secondary-btn {
+  background: rgba(33, 25, 35, 0.025);
+  color: var(--text-soft);
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+[data-theme="light"] .about-section {
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(201, 47, 109, 0.06),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 88% 65%,
+      rgba(70, 88, 120, 0.06),
+      transparent 30%
+    ),
+    #f8f5f9;
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+[data-theme="light"] .login-page {
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(201, 47, 109, 0.06),
+      transparent 35%
+    ),
+    #f7f4f8;
+}
+
+[data-theme="light"] .login-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(247, 242, 248, 0.92)
+    );
+
+  box-shadow:
+    0 30px 80px rgba(50, 40, 60, 0.12);
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+[data-theme="light"] .profile-page {
+  background:
+    linear-gradient(
+      135deg,
+      #f8f5f9,
+      #faf7f8,
+      #f0f3f7
+    );
+}
+
+[data-theme="light"] .profile-card,
+[data-theme="light"] .profile-strength-card,
+[data-theme="light"] .profile-aaroh-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(247, 242, 248, 0.90)
+    );
+
+  border-color: rgba(33, 25, 35, 0.10);
+}
+
+
+/* =========================================================
+   GENERIC TEXT FIXES
+   ========================================================= */
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] strong {
+  color: var(--text);
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: var(--border);
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: var(--muted-dark);
+}
+
+
+/* =========================================================
+   SMOOTH THEME TRANSITION
+   ========================================================= */
+
+body,
+.navbar,
+.hero,
+.why-aaroh,
+.how-aaroh,
+.innovation-lifecycle,
+.talks-section,
+.features-page,
+.universities-page,
+.about-section,
+.login-page,
+.profile-page,
+.problem-card,
+.lifecycle-card,
+.feature-card,
+.university-ecosystem-card,
+.login-card {
+  transition:
+    background 0.35s ease,
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.25s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   LIGHT — GLOBAL BACKGROUND
+   ========================================================= */
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(
+      circle at 12% 10%,
+      rgba(201, 47, 109, 0.055),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(110, 130, 165, 0.045),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafb 45%,
+      #f5f7fa 100%
+    );
+
+  color: var(--text);
+}
+
+/* =========================================================
+   LIGHT — HERO
+   ========================================================= */
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(
+      ellipse at 12% 25%,
+      rgba(201, 47, 109, 0.09),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 88% 35%,
+      rgba(105, 125, 160, 0.055),
+      transparent 36%
+    ),
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 48%,
+      #f5f7fa 100%
+    );
+}
+
+[data-theme="light"] .hero-title {
+  color: #211923;
+}
+
+[data-theme="light"] .hero-title span {
+  background: linear-gradient(
+    120deg,
+    #b82961 0%,
+    #d65c89 55%,
+    #c92f6d 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="light"] .hero-grid {
+  opacity: 0.055;
+}
+
+[data-theme="light"] .hero-orbit {
+  border-color: rgba(33, 25, 35, 0.075);
+}
+
+[data-theme="light"] .hero-center-card,
+[data-theme="light"] .floating-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.94),
+      rgba(252, 247, 250, 0.96)
+    );
+
+  border-color: rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 20px 55px rgba(45, 35, 55, 0.10);
+}
+
+[data-theme="light"] .floating-card strong {
+  color: #211923;
+}
+
+[data-theme="light"] .floating-card span {
+  color: #6d6672;
+}
+
+/* =========================================================
+   LIGHT — CARD SYSTEM
+   ========================================================= */
+
+[data-theme="light"] .problem-card,
+[data-theme="light"] .feature-card,
+[data-theme="light"] .innovation-card,
+[data-theme="light"] .lifecycle-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(253, 249, 252, 0.96)
+    );
+
+  border-color: rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 18px 55px rgba(45, 35, 55, 0.065);
+}
+
+[data-theme="light"] .problem-card:hover,
+[data-theme="light"] .feature-card:hover,
+[data-theme="light"] .innovation-card:hover,
+[data-theme="light"] .lifecycle-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fff8fb
+    );
+
+  border-color: rgba(201, 47, 109, 0.22);
+
+  box-shadow:
+    0 24px 65px rgba(45, 35, 55, 0.10);
+}
+
+[data-theme="light"] .problem-card h3,
+[data-theme="light"] .feature-card h2,
+[data-theme="light"] .innovation-card h3,
+[data-theme="light"] .lifecycle-card h3 {
+  color: #211923;
+}
+
+[data-theme="light"] .problem-card p,
+[data-theme="light"] .feature-card p,
+[data-theme="light"] .innovation-card > p,
+[data-theme="light"] .lifecycle-card p {
+  color: #625b68;
+}
+
+
+/* =========================================================
+   LIGHT — FEATURES
+   ========================================================= */
+
+[data-theme="light"] .features-page {
+  background:
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 50%,
+      #f5f7fa 100%
+    );
+}
+
+[data-theme="light"] .features-hero h1 {
+  color: #211923;
+}
+
+[data-theme="light"] .features-hero h1 span {
+  color: #c92f6d;
+}
+
+[data-theme="light"] .features-hero p {
+  color: #625b68;
+}
+
+
+/* =========================================================
+   LIGHT — EXPLORE
+   ========================================================= */
+
+[data-theme="light"] .explore-page {
+  background:
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 48%,
+      #f5f7fa 100%
+    );
+}
+
+[data-theme="light"] .explore-search {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(33, 25, 35, 0.10);
+  box-shadow: 0 12px 35px rgba(45, 35, 55, 0.05);
+}
+
+[data-theme="light"] .innovation-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+}
+
+[data-theme="light"] .innovation-card h3 {
+  color: #211923;
+}
+
+[data-theme="light"] .innovation-card > p {
+  color: #625b68;
+}
+
+/* =========================================================
+   LIGHT — INNOVATION JOURNEY
+   ========================================================= */
+
+[data-theme="light"] .innovation-path {
+  color: var(--text);
+}
+
+[data-theme="light"] .innovation-line {
+  background: rgba(33, 25, 35, 0.10);
+}
+
+[data-theme="light"] .innovation-line-progress {
+  background: linear-gradient(
+    90deg,
+    rgba(201, 47, 109, 0.25),
+    rgba(201, 47, 109, 0.75)
+  );
+}
+
+[data-theme="light"] .innovation-stage-marker {
+  background: #ffffff;
+  border-color: rgba(33, 25, 35, 0.10);
+
+  box-shadow:
+    0 10px 30px rgba(45, 35, 55, 0.08);
+}
+
+[data-theme="light"] .innovation-stage h3 {
+  color: #211923;
+}
+
+/* =========================================================
+   LIGHT — PROFILE
+   ========================================================= */
+
+[data-theme="light"] .profile-page {
+  background:
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 50%,
+      #f5f7fa 100%
+    );
+}
+
+[data-theme="light"] .profile-hero {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(252, 244, 249, 0.96)
+    );
+
+  border-color: rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 20px 60px rgba(45, 35, 55, 0.09);
+}
+
+[data-theme="light"] .profile-hero-glow {
+  background: rgba(201, 47, 109, 0.08);
+}
+
+[data-theme="light"] .profile-avatar {
+  border-color: rgba(255, 255, 255, 0.85);
+
+  box-shadow:
+    0 0 0 8px rgba(201, 47, 109, 0.05),
+    0 15px 35px rgba(45, 35, 55, 0.15);
+}
+
+[data-theme="light"] .profile-avatar span {
+  color: #ffffff;
+}
+
+[data-theme="light"] .profile-stats {
+  background: #ffffff;
+  border: 1px solid rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 16px 45px rgba(45, 35, 55, 0.065);
+}
+
+[data-theme="light"] .profile-stat {
+  color: #211923;
+}
+
+[data-theme="light"] .profile-stat strong,
+[data-theme="light"] .profile-stat h3,
+[data-theme="light"] .profile-stat .number {
+  color: #211923;
+}
+
+[data-theme="light"] .profile-card,
+[data-theme="light"] .profile-strength-card,
+[data-theme="light"] .profile-aaroh-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+
+  border-color: rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 18px 50px rgba(45, 35, 55, 0.06);
+}
+
+/* =========================================================
+   LIGHT — TEXT CONTRAST
+   ========================================================= */
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] strong {
+  color: #211923;
+}
+
+[data-theme="light"] p {
+  color: #625b68;
+}
+
+[data-theme="light"] .muted,
+[data-theme="light"] small {
+  color: #7a727e;
+}
+
+/* =========================================================
+   AAROH — MASTER LIGHT MODE SURFACE FIX
+   This converts remaining dark glass surfaces into
+   clean white/light surfaces.
+   ========================================================= */
+
+
+/* ---------- Universal surface ---------- */
+
+[data-theme="light"] .profile-stats,
+[data-theme="light"] .profile-card,
+[data-theme="light"] .profile-strength-card,
+[data-theme="light"] .profile-aaroh-card,
+
+[data-theme="light"] .about-problem-card,
+[data-theme="light"] .about-solution-card,
+
+[data-theme="light"] .login-card,
+
+[data-theme="light"] .feature-card,
+[data-theme="light"] .innovation-card,
+[data-theme="light"] .lifecycle-card,
+
+[data-theme="light"] .problem-card,
+
+[data-theme="light"] .university-card,
+[data-theme="light"] .university-ecosystem-card,
+
+[data-theme="light"] .floating-card,
+[data-theme="light"] .hero-center-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.97),
+      rgba(253, 248, 251, 0.97)
+    );
+
+  border-color:
+    rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 18px 55px rgba(45, 35, 55, 0.065);
+
+  color:
+    var(--text);
+}
+
+
+/* ---------- Profile stats ---------- */
+
+[data-theme="light"] .profile-stats {
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fcf8fb
+    );
+}
+
+[data-theme="light"] .profile-stat:hover {
+  background:
+    rgba(201, 47, 109, 0.045);
+}
+
+
+/* ---------- Profile ---------- */
+
+[data-theme="light"] .profile-hero {
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #fff8fb 100%
+    );
+
+  box-shadow:
+    0 22px 65px rgba(45, 35, 55, 0.09);
+}
+
+[data-theme="light"] .profile-edit-btn {
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  color:
+    var(--text);
+}
+
+[data-theme="light"] .profile-socials a {
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  color:
+    var(--muted);
+}
+
+
+/* ---------- About ---------- */
+
+[data-theme="light"] .about-problem-card,
+[data-theme="light"] .about-solution-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+
+  box-shadow:
+    0 18px 55px rgba(45, 35, 55, 0.06);
+}
+
+[data-theme="light"] .about-solution-card {
+
+  border-color:
+    rgba(201, 47, 109, 0.18);
+}
+
+
+/* ---------- Login ---------- */
+
+[data-theme="light"] .login-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+
+  box-shadow:
+    0 25px 75px rgba(45, 35, 55, 0.10);
+}
+
+
+/* ---------- Features ---------- */
+
+[data-theme="light"] .feature-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+}
+
+
+/* ---------- Explore ---------- */
+
+[data-theme="light"] .innovation-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+}
+
+[data-theme="light"] .innovation-card:hover {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fff7fb
+    );
+
+  border-color:
+    rgba(201, 47, 109, 0.22);
+}
+
+
+/* ---------- Lifecycle ---------- */
+
+[data-theme="light"] .lifecycle-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+}
+
+
+/* ---------- Generic glass surfaces ---------- */
+
+[data-theme="light"] .glass,
+[data-theme="light"] .glass-card,
+[data-theme="light"] .surface-card,
+[data-theme="light"] .content-card {
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  border-color:
+    rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 18px 50px rgba(45, 35, 55, 0.06);
+}
+
+
+/* ---------- Generic headings ---------- */
+
+[data-theme="light"] .profile-card h2,
+[data-theme="light"] .profile-card h3,
+[data-theme="light"] .profile-strength-card h2,
+[data-theme="light"] .profile-aaroh-card h2,
+
+[data-theme="light"] .about-problem-card h3,
+[data-theme="light"] .about-solution-card h3,
+
+[data-theme="light"] .feature-card h2,
+[data-theme="light"] .innovation-card h3,
+[data-theme="light"] .lifecycle-card h3 {
+
+  color:
+    #211923;
+}
+
+
+/* ---------- Generic paragraph text ---------- */
+
+[data-theme="light"] .profile-card p,
+[data-theme="light"] .profile-strength-card p,
+[data-theme="light"] .profile-aaroh-card p,
+
+[data-theme="light"] .about-problem-card p,
+[data-theme="light"] .about-solution-card p,
+
+[data-theme="light"] .feature-card p,
+[data-theme="light"] .innovation-card p,
+[data-theme="light"] .lifecycle-card p {
+
+  color:
+    #625b68;
+}
+
+
+/* ---------- Small pills / tags ---------- */
+
+[data-theme="light"] .profile-tag,
+[data-theme="light"] .profile-skill,
+[data-theme="light"] .profile-chip,
+[data-theme="light"] .category-option {
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  border-color:
+    rgba(33, 25, 35, 0.10);
+
+  color:
+    #514956;
+}
+
+
+/* ---------- Buttons that were using dark glass ---------- */
+
+[data-theme="light"] button:not(.primary-btn):not(.theme-toggle),
+[data-theme="light"] .secondary-btn {
+
+  color:
+    #211923;
+}
+
+
+/* ---------- Inputs ---------- */
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+
+  background:
+    rgba(255, 255, 255, 0.94);
+
+  color:
+    #211923;
+
+  border-color:
+    rgba(33, 25, 35, 0.10);
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+
+  color:
+    #89818d;
+}
+
+/* =========================================================
+   AAROH — COMPLETE LIGHT THEME SURFACE OVERRIDE
+   ========================================================= */
+
+[data-theme="light"] {
+
+  /* ---------- Core ---------- */
+
+  --background: #f8f5f0;
+  --background-deep: #f3eee9;
+
+  --surface: #ffffff;
+  --surface-solid: #ffffff;
+  --surface-light: #fffafd;
+
+  /* ---------- Text ---------- */
+
+  --text: #19131d;
+  --text-soft: #5f5864;
+  --cream: #211923;
+
+  --muted: #68616b;
+  --muted-dark: #8b838e;
+
+  /* ---------- Borders ---------- */
+
+  --border: #e4dfe5;
+  --border-light: #d9d1d9;
+
+  /* ---------- Brand ---------- */
+
+  --primary: #d14b82;
+  --primary-hover: #bd3e70;
+
+  /* ---------- Shadows ---------- */
+
+  --shadow-dark: rgba(45, 35, 55, 0.08);
+}
+
+
+/* =========================================================
+   GLOBAL LIGHT SURFACES
+   ========================================================= */
+
+[data-theme="light"] .profile-card,
+[data-theme="light"] .profile-stats,
+[data-theme="light"] .profile-strength-card,
+[data-theme="light"] .profile-aaroh-card,
+
+[data-theme="light"] .about-problem-card,
+[data-theme="light"] .about-solution-card,
+[data-theme="light"] .about-vision,
+
+[data-theme="light"] .login-card,
+
+[data-theme="light"] .trending-card,
+[data-theme="light"] .innovation-card,
+
+[data-theme="light"] .university-ecosystem-card,
+[data-theme="light"] .university-benefit-card,
+[data-theme="light"] .university-journey-track,
+[data-theme="light"] .university-vision,
+
+[data-theme="light"] .features-flow-track,
+[data-theme="light"] .features-highlight {
+
+  color: var(--text);
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf9fc
+    );
+
+  border-color:
+    rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 18px 50px rgba(45, 35, 55, 0.055);
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+[data-theme="light"] .profile-hero {
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #fff8fb
+    );
+
+  border-color:
+    rgba(33, 25, 35, 0.09);
+
+  box-shadow:
+    0 25px 65px rgba(45, 35, 55, 0.08);
+}
+
+[data-theme="light"] .profile-stats {
+  background:
+    #ffffff;
+}
+
+[data-theme="light"] .profile-stat:hover {
+  background:
+    rgba(201, 47, 109, 0.045);
+}
+
+[data-theme="light"] .profile-edit-btn,
+[data-theme="light"] .profile-socials a {
+
+  background:
+    #ffffff;
+
+  color:
+    var(--text);
+
+  border-color:
+    var(--border);
+}
+
+
+/* =========================================================
+   EXPLORE — TRENDING
+   ========================================================= */
+
+[data-theme="light"] .trending-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+
+  border-color:
+    #e4dfe5;
+}
+
+[data-theme="light"] .trending-card-top span {
+
+  color:
+    #bd3e70;
+
+  background:
+    rgba(201, 47, 109, 0.07);
+}
+
+
+/* =========================================================
+   EXPLORE — INNOVATIONS
+   ========================================================= */
+
+[data-theme="light"] .innovation-card {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+}
+
+[data-theme="light"] .innovation-card:hover {
+
+  background:
+    #fffafd;
+
+  border-color:
+    rgba(201, 47, 109, 0.25);
+}
+
+
+/* =========================================================
+   FEATURES — FLOW TRACK
+   ========================================================= */
+
+[data-theme="light"] .features-flow-track {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+
+  box-shadow:
+    0 15px 40px rgba(45, 35, 55, 0.05);
+}
+
+[data-theme="light"] .features-flow-item {
+
+  background:
+    #ffffff;
+
+  color:
+    var(--text);
+
+  border-color:
+    #e4dfe5;
+}
+
+
+/* =========================================================
+   FEATURES — BIG HIGHLIGHT
+   ========================================================= */
+
+[data-theme="light"] .features-highlight {
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7fb,
+      #ffffff
+    );
+
+  border-color:
+    rgba(201, 47, 109, 0.18);
+}
+
+
+/* =========================================================
+   UNIVERSITY — ECOSYSTEM CARDS
+   ========================================================= */
+
+[data-theme="light"] .university-ecosystem-card {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+
+  box-shadow:
+    0 15px 40px rgba(45, 35, 55, 0.045);
+}
+
+[data-theme="light"] .university-ecosystem-card:hover {
+
+  background:
+    #fffafd;
+
+  border-color:
+    rgba(201, 47, 109, 0.25);
+}
+
+
+/* =========================================================
+   UNIVERSITY — BENEFITS
+   ========================================================= */
+
+[data-theme="light"] .university-benefit-card {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+
+  box-shadow:
+    0 15px 40px rgba(45, 35, 55, 0.045);
+}
+
+
+/* =========================================================
+   UNIVERSITY — JOURNEY TRACK
+   ========================================================= */
+
+[data-theme="light"] .university-journey-track {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+}
+
+[data-theme="light"] .university-step > div {
+
+  background:
+    rgba(201, 47, 109, 0.07);
+
+  color:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   UNIVERSITY — VISION
+   ========================================================= */
+
+[data-theme="light"] .university-vision {
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7fb,
+      #ffffff
+    );
+
+  border-color:
+    rgba(201, 47, 109, 0.18);
+
+  box-shadow:
+    0 20px 60px rgba(45, 35, 55, 0.07);
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+[data-theme="light"] .about-problem-card,
+[data-theme="light"] .about-solution-card {
+
+  background:
+    #ffffff;
+
+  border-color:
+    #e4dfe5;
+}
+
+[data-theme="light"] .about-solution-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff7fb,
+      #ffffff
+    );
+
+  border-color:
+    rgba(201, 47, 109, 0.18);
+}
+
+[data-theme="light"] .about-vision {
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff7fb,
+      #ffffff
+    );
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+[data-theme="light"] .login-card {
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf8fb
+    );
+
+  box-shadow:
+    0 25px 70px rgba(45, 35, 55, 0.09);
+}
+
+[data-theme="light"] .google-login {
+
+  background:
+    #ffffff;
+
+  color:
+    var(--text);
+}
+
+
+/* =========================================================
+   ICON / SMALL SURFACES
+   ========================================================= */
+
+[data-theme="light"] .university-card-icon,
+[data-theme="light"] .university-benefit-icon,
+[data-theme="light"] .about-journey-icon,
+[data-theme="light"] .activity-icon {
+
+  background:
+    rgba(201, 47, 109, 0.07);
+
+  color:
+    var(--primary-hover);
+}
+
+
+/* =========================================================
+   TAGS / PILLS
+   ========================================================= */
+
+[data-theme="light"] .profile-tag,
+[data-theme="light"] .profile-skill,
+[data-theme="light"] .profile-chip {
+
+  background:
+    #ffffff;
+
+  color:
+    var(--text-soft);
+
+  border-color:
+    var(--border);
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+
+  background:
+    #ffffff;
+
+  color:
+    var(--text);
+
+  border-color:
+    var(--border);
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+
+  color:
+    #918994;
+}
+
+/* =========================================================
+   AAROH — REMAINING LIGHT THEME FIXES
+   ========================================================= */
+
+
+/* =========================================================
+   PROFILE — MY INNOVATIONS
+   ========================================================= */
+
+[data-theme="light"] .profile-innovation {
+  background: #ffffff;
+  border-color: #e4dfe5;
+}
+
+[data-theme="light"] .profile-innovation:hover {
+  background: #fffafd;
+  border-color: rgba(201, 47, 109, 0.24);
+}
+
+[data-theme="light"] .innovation-tags span {
+  background: #f3f0f3;
+  color: #68616b;
+}
+
+[data-theme="light"] .innovation-status.building {
+  color: #bd3e70;
+  background: rgba(201, 47, 109, 0.07);
+  border-color: rgba(201, 47, 109, 0.2);
+}
+
+[data-theme="light"] .innovation-status.completed {
+  color: #438653;
+  background: rgba(75, 150, 97, 0.08);
+  border-color: rgba(75, 150, 97, 0.18);
+}
+
+
+/* =========================================================
+   LOGIN — INPUTS
+   ========================================================= */
+
+[data-theme="light"] .login-input-wrapper {
+  background: #ffffff;
+  border-color: #e4dfe5;
+}
+
+[data-theme="light"] .login-input-wrapper > svg {
+  color: #8b838e;
+}
+
+[data-theme="light"] .login-input-wrapper input {
+  color: #211923;
+}
+
+[data-theme="light"] .login-input-wrapper input::placeholder {
+  color: #918994;
+}
+
+[data-theme="light"] .password-toggle {
+  color: #68616b;
+}
+
+
+/* =========================================================
+   ABOUT — JOURNEY CARDS
+   ========================================================= */
+
+[data-theme="light"] .about-journey-card {
+  background: #ffffff;
+  border-color: #e4dfe5;
+  box-shadow: 0 12px 35px rgba(45, 35, 55, 0.04);
+}
+
+[data-theme="light"] .about-journey-card:hover {
+  background: #fffafd;
+  border-color: rgba(201, 47, 109, 0.25);
+}
+
+[data-theme="light"] .about-journey-number {
+  color: #8b838e;
+}
+
+[data-theme="light"] .about-journey-card h4 {
+  color: #211923;
+}
+
+[data-theme="light"] .about-journey-card p {
+  color: #68616b;
+}
+
+/* =========================================================
+   FINAL LIGHT MODE HERO PATCH FIX
+   ========================================================= */
+
+[data-theme="light"] .hero {
+  background:
+    radial-gradient(
+      ellipse at 12% 20%,
+      rgba(201, 47, 109, 0.08),
+      transparent 42%
+    ),
+    radial-gradient(
+      ellipse at 85% 45%,
+      rgba(120, 130, 150, 0.08),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 45%,
+      #f6f7fa 100%
+    ) !important;
+}
+
+
+/* Remove the dark left glow */
+[data-theme="light"] .hero-glow-one {
+  background:
+    rgba(201, 47, 109, 0.06) !important;
+}
+
+
+/* Soften the right glow */
+[data-theme="light"] .hero-glow-two {
+  background:
+    rgba(100, 110, 130, 0.08) !important;
+}
+
+
+/* Keep the grid extremely subtle in light mode */
+[data-theme="light"] .hero-grid {
+  opacity: 0.05 !important;
+
+  background-image:
+    linear-gradient(
+      rgba(40, 30, 40, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(40, 30, 40, 0.04) 1px,
+      transparent 1px
+    ) !important;
+}
+
+/* =========================================================
+   AAROH TALKS — LIGHT MODE FIX
+   ========================================================= */
+
+[data-theme="light"] .talks-section {
+  background:
+    radial-gradient(
+      ellipse at 12% 25%,
+      rgba(201, 47, 109, 0.07),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 88% 60%,
+      rgba(120, 130, 145, 0.06),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #faf8fb 0%,
+      #fffafd 50%,
+      #f6f7fa 100%
+    ) !important;
+}
+
+
+/* Remove the dark transition overlay */
+[data-theme="light"] .talks-section::before {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(250, 248, 251, 0.55),
+      transparent
+    ) !important;
+}
+
+
+/* Grid becomes extremely subtle */
+[data-theme="light"] .talks-grid {
+  opacity: 0.035 !important;
+
+  background-image:
+    linear-gradient(
+      rgba(40, 30, 40, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(40, 30, 40, 0.04) 1px,
+      transparent 1px
+    ) !important;
+}
+
+
+/* =========================================================
+   FEATURED TALK
+   ========================================================= */
+
+[data-theme="light"] .talks-featured {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fffafd 100%
+    ) !important;
+
+  border-color:
+    rgba(201, 47, 109, 0.14) !important;
+
+  box-shadow:
+    0 25px 70px
+    rgba(45, 35, 55, 0.07);
+}
+
+
+[data-theme="light"] .talks-featured::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.65),
+      transparent 45%
+    ) !important;
+}
+
+
+/* Keep the pink glow, but make it softer */
+[data-theme="light"] .talks-featured-glow {
+  background:
+    rgba(201, 47, 109, 0.08) !important;
+}
+
+
+/* =========================================================
+   FEATURED TEXT
+   ========================================================= */
+
+[data-theme="light"] .talks-featured-copy h3 {
+  color:
+    #211923;
+}
+
+
+[data-theme="light"] .talks-featured-copy h3 span {
+  color:
+    #c92f6d;
+}
+
+
+[data-theme="light"] .talks-featured-copy p {
+  color:
+    #68616b;
+}
+
+
+[data-theme="light"] .talks-featured-label {
+  color:
+    #68616b;
+}
+
+
+[data-theme="light"] .talks-featured-number {
+  color:
+    rgba(33, 25, 35, 0.28);
+}
+
+
+/* =========================================================
+   PLAY BUTTON
+   ========================================================= */
+
+[data-theme="light"] .talks-play-btn {
+  color:
+    #211923;
+
+  background:
+    rgba(255, 255, 255, 0.90);
+
+  border-color:
+    rgba(33, 25, 35, 0.10);
+}
+
+
+[data-theme="light"] .talks-play-btn:hover {
+  background:
+    rgba(201, 47, 109, 0.06);
+
+  border-color:
+    rgba(201, 47, 109, 0.30);
+}
+
+
+/* =========================================================
+   TALK STAGE
+   ========================================================= */
+
+[data-theme="light"] .talks-stage-ring {
+  border-color:
+    rgba(33, 25, 35, 0.07);
+}
+
+
+[data-theme="light"] .talks-stage-ring-two {
+  border-color:
+    rgba(201, 47, 109, 0.12);
+}
+
+
+[data-theme="light"] .talks-stage-ring-three {
+  border-color:
+    rgba(100, 110, 130, 0.10);
+}
+
+
+/* Remove the dark center orb */
+[data-theme="light"] .talks-stage-core {
+  color:
+    #211923;
+
+  border-color:
+    rgba(201, 47, 109, 0.18);
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(201, 47, 109, 0.22),
+      rgba(255, 255, 255, 0.98) 72%
+    );
+
+  box-shadow:
+    0 0 55px
+    rgba(201, 47, 109, 0.12);
+}
+
+
+/* =========================================================
+   TALK TYPE CARDS
+   ========================================================= */
+
+[data-theme="light"] .talk-type-card {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fdf9fc
+    ) !important;
+
+  border-color:
+    rgba(33, 25, 35, 0.09) !important;
+
+  box-shadow:
+    0 15px 45px
+    rgba(45, 35, 55, 0.055);
+}
+
+
+[data-theme="light"] .talk-type-card:hover {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #fff7fb
+    ) !important;
+
+  border-color:
+    rgba(201, 47, 109, 0.25) !important;
+
+  box-shadow:
+    0 20px 55px
+    rgba(201, 47, 109, 0.08);
+}
+
+
+[data-theme="light"] .talk-type-top > span {
+  color:
+    #8b838e;
+}
+
+
+[data-theme="light"] .talk-type-icon {
+  color:
+    #c92f6d;
+
+  background:
+    rgba(201, 47, 109, 0.06);
+
+  border-color:
+    rgba(201, 47, 109, 0.15);
+}
+
+
+[data-theme="light"] .talk-type-card h3 {
+  color:
+    #211923;
+}
+
+
+[data-theme="light"] .talk-type-card p {
+  color:
+    #68616b;
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+   ========================================================= */
+
+[data-theme="light"] .talks-bottom > span {
+  background:
+    rgba(33, 25, 35, 0.10);
+}
+
+
+[data-theme="light"] .talks-bottom p {
+  color:
+    #68616b;
+}
+
+
+[data-theme="light"] .talks-bottom strong {
+  color:
+    #211923;
+}
+
+
+/* =========================================================
+   TALKS BACKGROUND GLOWS
+   ========================================================= */
+
+[data-theme="light"] .talks-glow-one {
+  background:
+    rgba(201, 47, 109, 0.06);
+}
+
+
+[data-theme="light"] .talks-glow-two {
+  background:
+    rgba(120, 130, 145, 0.06);
+}
+
+
+[data-theme="light"] .talks-orb-one {
+  border-color:
+    rgba(33, 25, 35, 0.06);
+}
+
+
+[data-theme="light"] .talks-orb-two {
+  border-color:
+    rgba(201, 47, 109, 0.06);
+}
