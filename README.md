@@ -149,7 +149,7 @@ The long-term platform is designed to use student skills, interests, project his
 
 🎨 Design System
 
-AAROH's interface follows a dark, premium, technology-focused visual language.
+AAROH's interface follows a dark, premium, technology-focused visual language. Comprehensive design tokens and component specifications are documented in [Design System Documentation](docs/design-system.md).
 
 Element
 

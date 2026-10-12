@@ -14,33 +14,91 @@
 @import "@fontsource/poppins";
 
 /* =========================================================
-   AAROH DESIGN SYSTEM
+   AAROH DESIGN SYSTEM — TOKENS & @theme
    ========================================================= */
 
+@theme {
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-hover: var(--color-brand-hover);
+  --color-brand-muted: var(--color-brand-muted);
+
+  --color-bg-base: var(--color-bg-base);
+  --color-bg-subtle: var(--color-bg-subtle);
+  --color-surface-card: var(--color-surface-card);
+  --color-surface-raised: var(--color-surface-raised);
+
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-medium: var(--color-border-medium);
+  --color-border-focus: var(--color-border-focus);
+
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-info: var(--color-info);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
 :root {
-  /* ---------- Core Palette ---------- */
+  /* ---------- Semantic Design Tokens (Dark Theme Default) ---------- */
+  --color-brand-primary: #c92f6d;
+  --color-brand-hover: #e14b87;
+  --color-brand-muted: rgba(201, 47, 109, 0.14);
+
+  --color-bg-base: #0c0810;
+  --color-bg-subtle: #140d18;
+  --color-surface-card: #191220;
+  --color-surface-raised: #221a2c;
+
+  --color-text-primary: #f6eedf;
+  --color-text-secondary: #ded6ca;
+  --color-text-muted: #9ba4b2;
+
+  --color-border-subtle: rgba(246, 238, 223, 0.09);
+  --color-border-medium: rgba(246, 238, 223, 0.16);
+  --color-border-focus: #c92f6d;
+
+  --color-success: #2ea879;
+  --color-warning: #d98b2b;
+  --color-error: #e04b4b;
+  --color-info: #4f8be8;
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Poppins", sans-serif;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* ---------- Legacy Variables (Preserved for backward compatibility) ---------- */
   --background: #120c16;
   --background-deep: #0b0810;
   --plum: #230f23;
   --slate: #2d3748;
   --blue-slate: #4a5d7a;
   --cream: #f6eedf;
-  /* ---------- Brand ---------- */
   --primary: #c92f6d;
   --primary-hover: #e14b87;
-  /* ---------- Surfaces ---------- */
   --surface: rgba(45, 55, 72, 0.45);
   --surface-solid: #171c28;
   --surface-light: #242d3d;
-  /* ---------- Text ---------- */
   --text: #f6eedf;
   --text-soft: #ded6ca;
   --muted: #9ba4b2;
   --muted-dark: #70798a;
-  /* ---------- Borders ---------- */
   --border: rgba(246, 238, 223, 0.09);
   --border-light: rgba(246, 238, 223, 0.14);
-  /* ---------- Shadows ---------- */
   --shadow-dark: rgba(0, 0, 0, 0.4);
   --shadow-primary: rgba(201, 47, 109, 0.28);
 }
@@ -86,6 +144,24 @@ button {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .container {
@@ -6806,16 +6882,49 @@ img {
    ========================================================= */
 
 [data-theme="light"] {
-  /* ---------- Core ---------- */
+  /* ---------- Semantic Design Tokens (Light Mode) ---------- */
+  --color-brand-primary: #c92f6d;
+  --color-brand-hover: #b3255e;
+  --color-brand-muted: rgba(201, 47, 109, 0.10);
+
+  --color-bg-base: #fbf9f6;
+  --color-bg-subtle: #f3efe9;
+  --color-surface-card: #ffffff;
+  --color-surface-raised: #f7f4f0;
+
+  --color-text-primary: #211923;
+  --color-text-secondary: #4d4452;
+  --color-text-muted: #6e6575;
+
+  --color-border-subtle: rgba(33, 25, 35, 0.10);
+  --color-border-medium: rgba(33, 25, 35, 0.18);
+  --color-border-focus: #c92f6d;
+
+  --color-success: #1d835c;
+  --color-warning: #b86e17;
+  --color-error: #c93434;
+  --color-info: #2a6ecb;
+
+  /* ---------- Legacy Variables (Light Mode) ---------- */
+  --background: #fbf9f6;
+  --background-deep: #f3efe9;
   --plum: #f3e8ef;
   --slate: #e9edf3;
   --blue-slate: #71809a;
-  /* ---------- Brand ---------- */
-  /* ---------- Surfaces ---------- */
-  /* ---------- Text ---------- */
-  /* ---------- Borders ---------- */
-  /* ---------- Shadows ---------- */
-  --shadow-primary: rgba(201, 47, 109, 0.20);
+  --cream: #211923;
+  --primary: #c92f6d;
+  --primary-hover: #b3255e;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-solid: #ffffff;
+  --surface-light: #f7f4f0;
+  --text: #211923;
+  --text-soft: #4d4452;
+  --muted: #6e6575;
+  --muted-dark: #8c8294;
+  --border: rgba(33, 25, 35, 0.10);
+  --border-light: rgba(33, 25, 35, 0.16);
+  --shadow-dark: rgba(33, 25, 35, 0.08);
+  --shadow-primary: rgba(201, 47, 109, 0.18);
 }
 
 /* =========================================================

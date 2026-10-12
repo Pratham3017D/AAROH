@@ -1,7 +1,6 @@
 import {
   ArrowRight,
   Award,
-  Compass,
   GraduationCap,
   Lightbulb,
   Rocket,
